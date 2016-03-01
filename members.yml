@@ -1,4 +1,4 @@
 sites:
   - "https://natwelch.com"
   - "http://jon.gold"
-  = "https://ringdirector.herokuapp.com/"
+  - "https://ringdirector.herokuapp.com/"
