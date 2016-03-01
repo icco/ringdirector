@@ -1,5 +1,7 @@
 # ringdirector
 
+<a href="https://travis-ci.org/icco/ringdirector"><img src="https://travis-ci.org/icco/ringdirector.svg"></a>
+
 A modern take on webrings. 
 
 ## Join
