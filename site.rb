@@ -33,19 +33,19 @@ end
 
 # A valid site is a site in the members file.
 def valid_site? url
-  return sites.include? url
+  return sites.include? URI(url)
 end
 
 # Get the next site to redirect to. Pick a random one if the current site isn't
 # provided.
 def next_site referrer = ""
-  if referrer.empty?
-    return sites.sample
-  else
-    idx = sites.index(referrer)
+  if valid_site? referrer
+    idx = sites.index(URI(referrer))
     nxt = (idx + 1) % sites.size
     return sites[nxt]
   end
+
+  return sites.sample
 end
 
 # Return an array of URIs who are members of the webring.
