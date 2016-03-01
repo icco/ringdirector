@@ -3,7 +3,6 @@ source "https://rubygems.org"
 ruby "2.3.0"
 
 gem "erubis", "~> 2.7"
-gem "oj"
 gem "rake"
 gem "sinatra"
 gem "thin"
@@ -18,4 +17,5 @@ end
 
 group :test do
   gem "minitest"
+  gem "rack-test"
 end
