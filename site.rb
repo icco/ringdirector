@@ -33,6 +33,7 @@ end
 
 # A valid site is a site in the members file.
 def valid_site? url
+  return false if url.nil? || url.empty?
   return sites.include? URI(url)
 end
 
