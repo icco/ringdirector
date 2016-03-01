@@ -12,4 +12,9 @@ class WebTest < Minitest::Test
     get '/'
     assert last_response.ok?
   end
+
+  def test_next
+    get '/next'
+    assert last_response.redirect?
+  end
 end
